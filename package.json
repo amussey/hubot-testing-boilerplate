@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "author": "Andrew Mussey",
   "description": "A starter set of tests for Github's Hubot.",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register tests"
+  },
   "dependencies": {
     "hubot": "^2.13.0",
     "hubot-diagnostics": "0.0.1",
@@ -11,6 +14,15 @@
     "hubot-irc": "^0.2.7",
     "hubot-redis-brain": "0.0.2",
     "hubot-scripts": "^2.5.16"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "coffee-script": "^1.9.3",
+    "coffeelint": "^1.9.4",
+    "hubot-test-helper": "0.0.6",
+    "mocha": "^2.2.5",
+    "nock": "^2.3.0",
+    "sinon": "^1.14.1"
   },
   "engines": {
     "node": "0.10.x"
