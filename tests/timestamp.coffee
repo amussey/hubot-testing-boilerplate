@@ -37,3 +37,6 @@ describe 'timestamp', ->
 
     it 'should have called toString', ->
       expect(momentUnixToStringStub.callCount).to.eql 1
+
+    it 'should have called unix() with the correct parameters', ->
+      expect(momentUnixStub.args[0]).to.eql [ '1318781876' ]
