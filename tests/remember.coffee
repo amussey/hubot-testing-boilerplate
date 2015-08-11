@@ -1,6 +1,5 @@
 Helper = require('hubot-test-helper')
 expect = require('chai').expect
-sinon = require('sinon')
 
 # helper loads a specific script if it's a file
 helper = new Helper('./../scripts/remember.coffee')
@@ -61,7 +60,7 @@ describe 'remember', ->
       room.robot.brain.data.memory = 'brain contents'
       room.user.say 'mary', 'hubot memory'
 
-    it 'should tell the room it is leaving', ->
+    it 'should reply with the contents of the memory', ->
       expect(room.messages).to.eql [
         ['mary', 'hubot memory']
         ['hubot', '@mary brain contents']

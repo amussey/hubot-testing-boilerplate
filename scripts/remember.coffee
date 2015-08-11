@@ -1,9 +1,12 @@
 # Description:
-#   Remember
+#   Remember a string in hubot's brain.
 #
 # Commands:
 #   hubot remember <text> - Remember a string in the hubot brain.
 #   hubot memory - Reply back with with the memorized string.
+#
+# Author:
+#   amussey
 
 module.exports = (robot) ->
   robot.respond /remember (.*)$/i, (msg) ->

@@ -1,6 +1,5 @@
 Helper = require('hubot-test-helper')
 expect = require('chai').expect
-sinon = require('sinon')
 
 # helper loads a specific script if it's a file
 helper = new Helper('./../scripts/shipit.coffee')

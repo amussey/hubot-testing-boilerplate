@@ -13,7 +13,8 @@
     "hubot-heroku-keepalive": "0.0.4",
     "hubot-irc": "^0.2.7",
     "hubot-redis-brain": "0.0.2",
-    "hubot-scripts": "^2.5.16"
+    "hubot-scripts": "^2.5.16",
+    "moment": "^2.10.6"
   },
   "devDependencies": {
     "chai": "^2.3.0",

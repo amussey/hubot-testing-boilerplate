@@ -1,6 +1,5 @@
 Helper = require('hubot-test-helper')
 expect = require('chai').expect
-sinon = require('sinon')
 nock = require('nock')
 
 helper = new Helper('./../scripts/pugme.coffee')
